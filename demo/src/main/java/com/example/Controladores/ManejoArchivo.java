@@ -5,6 +5,7 @@ import com.example.Modelos.Modelo;
 import com.example.Vistas.Vista;
 
 import java.io.File;
+import java.util.*;
 
 
 public class ManejoArchivo {
@@ -17,8 +18,14 @@ public class ManejoArchivo {
         this.vista = vista;
     }
 
-    public Archivo pedirArchivos(Archivo archivo){
+    public List<Archivo> pedirVariosArchivos(Archivo archivoViejo, Archivo archivoNuevo){
+        List<Archivo> archivos = new ArrayList<>();
+        archivos.add(archivoViejo);
+        archivos.add(archivoNuevo);
+        return archivos;
+    }
 
+    public Archivo pedirUnArchivo(Archivo archivo){
         return archivo;
     }
 }

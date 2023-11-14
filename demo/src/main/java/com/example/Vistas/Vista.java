@@ -11,13 +11,18 @@ public class Vista {
     private Modelo modelo;
 
     private DialogoBusquedaArchivo dialogoBusquedaArchivo;
+    private DialogoNotificacion dialogoNotificacion;
 
     public Vista(Modelo modelo) {
         this.modelo = modelo;
         this.dialogoBusquedaArchivo = new DialogoBusquedaArchivo();
+        this.dialogoNotificacion = new DialogoNotificacion();
     }
 
     public File pedidoArchivo(String titulo){
         return this.dialogoBusquedaArchivo.abrirDialogoBusqueda(this.modelo, titulo);
+    }
+    public void mostrarDialogoNotificacion(String cuerpo, String titulo){
+        dialogoNotificacion.mostrar(cuerpo, titulo);
     }
 }

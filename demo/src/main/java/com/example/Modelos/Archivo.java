@@ -4,6 +4,9 @@ public class Archivo {
     private StringBuilder tipo;
     private StringBuilder direccionamiento;
 
+    public Archivo() {
+    }
+
     public Archivo(StringBuilder tipo, StringBuilder direccionamiento) {
         this.tipo = tipo;
         this.direccionamiento = direccionamiento;

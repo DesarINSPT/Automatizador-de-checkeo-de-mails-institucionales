@@ -1,7 +1,7 @@
 package com.example.Modelos;
 
 public class Constantes {
-    private String DIRECCIONAMIENTO_ORIGEN_LECTURA = new String(".");
+    private String DIRECCIONAMIENTO_ORIGEN_LECTURA = new String("..");
 
     private String TITULO_SELECTOR_ARCHIVO_VIEJO = new String("Seleccionar el archivo con información VIEJA");
 
@@ -12,6 +12,10 @@ public class Constantes {
     private String XLSX = new String(".xlsx");
 
     private String CANCELAR = new String("CANCELAR");
+
+    private String TITULO_TERMINACION = new String("Finalización del programa");
+
+    private String CUERPO_TERMINACION_X_CANCELAMIENTO = new String("Programa terminado debido a cancelamiento");
 
     public Constantes() {
     }
@@ -28,19 +32,27 @@ public class Constantes {
         return TITULO_SELECTOR_ARCHIVO_NUEVO;
     }
 
-    public String getStringCSV(){
+    public String getCSV(){
         return CSV;
     }
 
-    public String getStringXLS() {
+    public String getXLS() {
         return XLS;
     }
 
-    public String getStringXLSX() {
+    public String getXLSX() {
         return XLSX;
     }
 
     public String getCANCELAR() {
         return CANCELAR;
+    }
+
+    public String getTITULO_TERMINACION() {
+        return TITULO_TERMINACION;
+    }
+
+    public String getCUERPO_TERMINACION_X_CANCELAMIENTO() {
+        return CUERPO_TERMINACION_X_CANCELAMIENTO;
     }
 }

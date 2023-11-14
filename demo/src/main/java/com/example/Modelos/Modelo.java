@@ -5,6 +5,8 @@ public class Modelo {
     private Archivo archivo;
 
     public Modelo() {
+        this.constantes = new Constantes();
+        this.archivo = new Archivo();
     }
 
     public String obtenerDIRECCIONAMIENTO_ORIGEN_LECTURA(){
@@ -18,18 +20,26 @@ public class Modelo {
     public String obtenerTITULO_SELECTOR_ARCHIVO_VIEJO(){return this.constantes.getTITULO_SELECTOR_ARCHIVO_VIEJO();}
 
     public String obtenerStringCSV(){
-        return this.constantes.getStringCSV();
+        return this.constantes.getCSV();
     }
 
     public String obtenerStringXLS(){
-        return this.constantes.getStringXLS();
+        return this.constantes.getXLS();
     }
 
     public String obtenerStringXLSX(){
-        return this.constantes.getStringXLSX();
+        return this.constantes.getXLSX();
     }
 
     public String obtenerOpcionCancelar(){return this.constantes.getCANCELAR();}
+
+    public String obtenerTituloTerminacion(){
+        return this.constantes.getTITULO_TERMINACION();
+    }
+
+    public String obtenerCuerpoTerminacionXCancelamiento(){
+        return this.constantes.getCUERPO_TERMINACION_X_CANCELAMIENTO();
+    }
 
     public StringBuilder obtenerArchivoTipo(){
         return archivo.getTipo();

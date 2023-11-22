@@ -31,6 +31,10 @@ public class Modelo {
         return this.constantes.getXLSX();
     }
 
+    public String obtenerStringNoSoportado(){
+        return this.constantes.getNO_SOPORTADO();
+    }
+
     public String obtenerOpcionCancelar(){return this.constantes.getCANCELAR();}
 
     public String obtenerTituloTerminacion(){
@@ -41,19 +45,24 @@ public class Modelo {
         return this.constantes.getCUERPO_TERMINACION_X_CANCELAMIENTO();
     }
 
-    public StringBuilder obtenerArchivoTipo(){
-        return archivo.getTipo();
+    public String obtenerCuerpoTerminacionXArchivoErroneo() {
+        return this.constantes.getCUERPO_TERMINACION_X_ARCHIVO_ERRONEO();
     }
 
-    public void asignarArchivoTipo(StringBuilder tipo) {
-        archivo.setTipo(tipo);
+
+    public String obtenerPRIMERA_COLUMNA() {
+        return this.constantes.getPRIMERA_COLUMNA();
     }
 
-    public StringBuilder getDireccionamiento() {
-        return archivo.getDireccionamiento();
+    public String obtenerSEGUNDA_COLUMNA() {
+        return this.constantes.getSEGUNDA_COLUMNA();
     }
 
-    public void setDireccionamiento(StringBuilder direccionamiento) {
-        archivo.setDireccionamiento(direccionamiento);
+    public String obtenerTERCERA_COLUMNA() {
+        return this.constantes.getTERCERA_COLUMNA();
+    }
+
+    public String obtenerCUARTA_COLUMNA() {
+        return this.constantes.getCUARTA_COLUMNA();
     }
 }
